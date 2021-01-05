@@ -40,7 +40,6 @@ public class Brick : MonoBehaviour {
 			breakbleCount--;
 			level.BlockDestroyed();
 			Destroy (gameObject);				
-			//TriggerSparklesVFX();
 			PlayBlockDestroySFX ();
 			if (isBreakbleduo) {
 				NewItem ();
@@ -65,19 +64,10 @@ public class Brick : MonoBehaviour {
 
 	}
 
-
-	/*private void TriggerSparklesVFX(){
-		GameObject sparkles = Instantiate (blockSparklesVFX, transform.position, transform.rotation);
-		Destroy (sparkles, 1f);
-	}*/
-
 	void LoadSprites() {
 		int spriteIndex = timesHit - 1;
 		if (hitSprites[spriteIndex]){
 		this.GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
 		}
 	}
-	/*void SimulateWin(){
-		level.LoadNextScene ();
-	}*/
 }

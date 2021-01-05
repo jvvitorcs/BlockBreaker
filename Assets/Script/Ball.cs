@@ -14,7 +14,7 @@ public class Ball : MonoBehaviour {
 	//private Objects upgrades;
 	Vector3 paddleToBallVector;
 	Rigidbody2D rb2;
-	bool moreBalls, ballsCount;
+	//bool moreBalls, ballsCount;
 	AudioSource myAudioSource;
 	[SerializeField] bool hasStarted = false;
 	[SerializeField] float minV = 2f, maxV = 10f;
